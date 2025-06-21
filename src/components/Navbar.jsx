@@ -7,7 +7,7 @@ export default function Navbar() {
       <Container>
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <img src="/src/assets/icons/Logo.png" alt="Logo" className="w-[74px] h-[74px] mr-[15px]" />
+            <img src="src\assets\icons\LogoSatuTempat1.png" alt="Logo" className="w-[74px] h-[74px] mr-[15px]" />
             <span className="text-[32px] text-[#255d60] font-bold">SatuTempat</span>
           </div>
           <div className="flex items-center gap-6">
