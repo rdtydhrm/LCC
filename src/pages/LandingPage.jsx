@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
 import Container from "../components/Container.jsx";
+import Carousel from "../components/Carousel.jsx";
 
 export default function LandingPage() {
   return (
@@ -30,8 +31,9 @@ export default function LandingPage() {
             </p>
           </section>
           <div className="w-full max-w-[1180px] mx-auto flex justify-end relative">
+            <span className="absolute left-[15px] top-[118px] text-[48px] font-bold z-10 select-none text-[#214b4e] ">Maps</span>
             <div className="mt-[200px] w-full h-[570px] rounded-[30px] bg-[#214b4e] shadow-lg"></div>
-            <select className="w-[272px] h-[64px] px-4 rounded-[8px] text-[#214b4e] bg-white border border-gray-300 shadow focus:outline-none absolute right-0 top-[114px] z-10">
+            <select className="w-[270px] h-[43px] px-4 rounded-[8px] text-[#214b4e] bg-white border border-gray-300 shadow focus:outline-none absolute right-[13px] top-[140px] z-10">
               <option>All</option>
               <option>Islam</option>
               <option>Hindu</option>
@@ -40,6 +42,12 @@ export default function LandingPage() {
               <option>Buddha</option>
               <option>Konghuchu</option>
             </select>
+          </div>
+          <div className="mt-[46px] w-full flex justify-center">
+            <h1 className="text-[48px] font-bold text-[#214b4e] text-center">Rekomendasi</h1>
+          </div>
+          <div className="mt-8 w-full flex justify-center">
+            <Carousel />
           </div>
         </Container>
       </main>
