@@ -2,6 +2,8 @@ import React from "react";
 import imgKatedral from "../assets/images/Rectangle 9.png";
 import imgMasjid from "../assets/images/Rectangle 9.png";
 import imgVihara from "../assets/images/Rectangle 9.png";
+import iconLeft from "../assets/icons/kiri.svg";
+import iconRight from "../assets/icons/kanan.svg";
 
 // Dummy data for recommendations
 const recommendations = [
@@ -51,7 +53,7 @@ export default function Carousel() {
 				className="absolute left-0 z-10 bg-[#2a7477] hover:bg-[#214b4e] rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
 				aria-label="Sebelumnya"
 			>
-				<span className="text-2xl text-white">&#9664;</span>
+				<img src={iconLeft} alt="Kiri" className="w-6 h-6" />
 			</button>
 			{/* Carousel Items */}
 			<div className="flex w-full h-full items-center justify-center gap-6 relative">
@@ -119,7 +121,7 @@ export default function Carousel() {
 				className="absolute right-0 z-10 bg-[#2a7477] hover:bg-[#214b4e] rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
 				aria-label="Selanjutnya"
 			>
-				<span className="text-2xl">&#8594;</span>
+				<img src={iconRight} alt="Kanan" className="w-6 h-6" />
 			</button>
 		</div>
 	);
