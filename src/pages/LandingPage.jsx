@@ -5,21 +5,30 @@ import Container from "../components/Container.jsx";
 import Carousel from "../components/Carousel.jsx";
 
 export default function LandingPage() {
+  React.useEffect(() => {
+    document.documentElement.style.scrollBehavior = "smooth";
+    return () => {
+      document.documentElement.style.scrollBehavior = "auto";
+    };
+  }, []);
+
   return (
-    <div
-      className="h-[748px] flex flex-col bg-gray-100"
-      style={{
-        backgroundImage: 'url("/src/assets/images/BG1.png")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}
-    >
+    <div className="flex flex-col bg-gray-100">
       <Navbar />
       <main className="flex-1 w-full">
-        <Container>
-          <section className="w-full h-full flex flex-col items-start justify-center py-16">
-            <h1 className="font-bold mb-4 mt-[180px] text-[56px] text-[#214b4e] text-left">
+        {/* Hero Section dengan Parallax */}
+        <section
+          className="w-full h-[720px] flex flex-col items-start justify-center py-16 relative overflow-hidden"
+          style={{
+            backgroundImage: 'url("/src/assets/images/BG1.png")',
+            backgroundAttachment: 'fixed',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+          }}
+        >
+          <Container>
+            <h1 className="font-bold mb-4 mt-[170px] text-[56px] text-[#214b4e] text-left">
               SatuTempat
             </h1>
             <p className="text-[25px] text-[#214b4e] text-left max-w-[1200px]">
@@ -29,8 +38,10 @@ export default function LandingPage() {
               rekomendasimu untuk membantu orang lain menemukan tempat ibadah
               terbaik.
             </p>
-          </section>
-          <div className="w-full max-w-[1180px] mx-auto flex justify-end relative">
+          </Container>
+        </section>
+        <Container>
+          <div className="w-full max-w-[1180px] mx-auto flex justify-end relative -mt-[50px]">
             <span className="absolute left-[15px] top-[118px] text-[48px] font-bold z-10 select-none text-[#214b4e] ">Maps</span>
             <div className="mt-[200px] w-full h-[570px] rounded-[30px] bg-[#214b4e] shadow-lg"></div>
             <select className="w-[270px] h-[43px] px-4 rounded-[8px] text-[#214b4e] bg-white border border-gray-300 shadow focus:outline-none absolute right-[13px] top-[140px] z-10">

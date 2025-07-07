@@ -1,7 +1,7 @@
 import React from "react";
-import imgKatedral from "../assets/images/Rectangle 9.png";
-import imgMasjid from "../assets/images/Rectangle 9.png";
-import imgVihara from "../assets/images/Rectangle 9.png";
+import imgKatedral from "../assets/images/Katedral.jpg";
+import imgMasjid from "../assets/images/Masjid.jpg";
+import imgVihara from "../assets/images/Vihara.jpg";
 import iconLeft from "../assets/icons/kiri.svg";
 import iconRight from "../assets/icons/kanan.svg";
 
@@ -30,11 +30,11 @@ const recommendations = [
 export default function Carousel() {
 	const [active, setActive] = React.useState(1);
 
-	// Auto-slide ke kanan setiap 3 detik
+	// Auto-slide ke kanan setiap 10 detik
 	React.useEffect(() => {
 		const interval = setInterval(() => {
 			setActive((prev) => (prev === recommendations.length - 1 ? 0 : prev + 1));
-		}, 3000);
+		}, 7000);
 		return () => clearInterval(interval);
 	}, []);
 

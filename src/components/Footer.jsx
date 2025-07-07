@@ -31,6 +31,8 @@ export default function Footer() {
           </div>
         </div>
       </Container>
+      <hr className="border-t border-[#379395] mt-8 mx-[130px]" />
+      <div className="text-center text-[20px] text-[#214b4e] font-medium mt-4 mb-2">Copyright 2025. SatuTempat. All Right Reserved.</div>
     </footer>
   );
 }
