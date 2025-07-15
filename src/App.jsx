@@ -5,6 +5,9 @@ import LandingPage from "./pages/LandingPage";
 import Islam from "./pages/Islam.jsx";
 import DetailSalman from "./pages/DetailSalman.jsx";
 
+// import Login from "./login.jsx"
+// import TAB from "./tab.jsx"
+
 export default function App() {
   return (
     <Router>

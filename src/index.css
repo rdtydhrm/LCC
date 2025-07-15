@@ -7,3 +7,12 @@
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
+/* Custom theme colors as CSS variables */
+:root {
+  --color-greentea: #1E3C3E;
+  --color-abu: #E7E7E6;
+  --color-putihBagus: #FAFAFA;
+  --color-opacityHijau60: #789193;
+  --color-greenTeaFont: #214B4E;
+}
+
