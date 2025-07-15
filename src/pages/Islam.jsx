@@ -20,6 +20,7 @@ import M5belas from "../assets/images/agama/M15.jpg";
 import M6belas from "../assets/images/agama/M16.jpg";
 import waveFooter from "../assets/images/waveFooter.svg";
 import FooterIslam from "../components/FooterIslam.jsx";
+import { Link } from "react-router-dom";
 
 export default function Islam() {
   React.useEffect(() => {
@@ -32,7 +33,7 @@ export default function Islam() {
   const cards = [
     {
       image: Msatu,
-      name: "Masjid Agung Jami’",
+      name: "Masjid Agung Jami'",
       location: "Malang, Jawa Timur",
       rating: "4.8",
       desc: "Masjid ini didirikan pada tahun 1890 M. Menurut prasasti yang ada, masjid ini dibangun dalam 2 tahap...",
@@ -133,7 +134,7 @@ export default function Islam() {
       name: "Masjid Cheng Ho",
       location: "Malang, Jawa Timur",
       rating: "4.8",
-      desc: "Masjid Cheng Ho, salah satu ikon terbaru Kota Malang. Lalu, masjid yang mulai dibangun tahun 2013 itu...",
+      desc: "Masjid Cheng Ho, salah satu ikon terbaru Kota Malang. Lalu, masjid yang mulai dibangun tahun 2013 itu...",
     },
     {
       image: M6belas,
@@ -172,9 +173,12 @@ export default function Islam() {
             Gaya arsitektur yang unik rupanya menjadi perhatian dan daya tarik
             tersendiri di mata publik.
           </p>
-          <button className="mt-6 bg-[#215d60] text-white text-[18px] font-bold w-[249px] h-[45px] rounded-[200px] shadow hover:bg-[#2a7477] transition">
+          <Link
+            to="/masjid/salman-al-farisi"
+            className="mt-6 bg-[#215d60] text-white text-[18px] font-bold w-[249px] h-[45px] rounded-[200px] shadow hover:bg-[#2a7477] transition flex items-center justify-center"
+          >
             Baca selengkapnya
-          </button>
+          </Link>
         </Container>
       </section>
 
