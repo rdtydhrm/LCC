@@ -4,13 +4,14 @@ import LoginModal from "./LoginModal.jsx";
 
 export default function Navbar() {
   const [showLogin, setShowLogin] = useState(false);
+  // showDropdown: false | 'agama' | 'berita'
   const [showDropdown, setShowDropdown] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   // Close dropdown saat klik di luar
   React.useEffect(() => {
     function handleClick(e) {
-      if (!e.target.closest('.agama-dropdown-parent')) {
+      if (!e.target.closest('.agama-dropdown-parent') && !e.target.closest('.berita-dropdown-parent')) {
         setShowDropdown(false);
       }
     }
@@ -52,12 +53,12 @@ export default function Navbar() {
                 <button
                   type="button"
                   className="text-[22px] font-bold text-[#255d60] relative group px-2 flex items-center focus:outline-none"
-                  onClick={() => setShowDropdown((prev) => !prev)}
+                  onClick={() => setShowDropdown((prev) => prev === 'agama' ? false : 'agama')}
                 >
                   Agama
                   <span className="absolute left-1/2 -translate-x-1/2 bottom-0 w-0 group-hover:w-[75px] h-[2px] bg-[#255d60] rounded transition-all duration-300"></span>
                 </button>
-                {showDropdown && (
+                {showDropdown === 'agama' && (
                   <ul className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-[130px] bg-white shadow-lg rounded-lg z-50 animate-fadeIn">
                     <li><a href="/agama/islam" className="block px-4 py-2 hover:bg-[#e6f2f2] text-[#255d60] font-bold ">Islam</a></li>
                     <li><a href="/agama/kristen" className="block px-4 py-2 hover:bg-[#e6f2f2] text-[#255d60] font-bold ">Kristen</a></li>
@@ -68,11 +69,21 @@ export default function Navbar() {
                   </ul>
                 )}
               </li>
-              <li>
-                <a href="/berita" className="text-[22px] font-bold text-[#255d60] relative group px-2">
+              <li className="relative berita-dropdown-parent">
+                <button
+                  type="button"
+                  className="text-[22px] font-bold text-[#255d60] relative group px-2 flex items-center focus:outline-none"
+                  onClick={() => setShowDropdown((prev) => prev === 'berita' ? false : 'berita')}
+                >
                   Berita
                   <span className="absolute left-1/2 -translate-x-1/2 bottom-0 w-0 group-hover:w-[67px] h-[2px] bg-[#255d60] rounded transition-all duration-300"></span>
-                </a>
+                </button>
+                {showDropdown === 'berita' && (
+                  <ul className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-[150px] bg-white shadow-lg rounded-lg z-50 animate-fadeIn">
+                    <li><a href="/berita" className="block px-4 py-2 hover:bg-[#e6f2f2] text-[#255d60] font-bold ">Nasional</a></li>
+                    <li><a href="/berita/internasional" className="block px-4 py-2 hover:bg-[#e6f2f2] text-[#255d60] font-bold ">Internasional</a></li>
+                  </ul>
+                )}
               </li>
               <li>
                 <a href="/tentang" className="text-[22px] font-bold text-[#255d60] relative group px-2">

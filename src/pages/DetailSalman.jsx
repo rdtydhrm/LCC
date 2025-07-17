@@ -9,6 +9,9 @@ import masjid3 from "../assets/images/agama/IntTiga.webp";
 import masjid4 from "../assets/images/agama/IntEmpat.webp";
 
 export default function DetailSalman() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [previewImg, setPreviewImg] = useState(null);
   const [activeNav, setActiveNav] = useState('informasi');
   const handleOpenPreview = (imgSrc) => setPreviewImg(imgSrc);

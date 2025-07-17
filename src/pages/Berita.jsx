@@ -4,9 +4,11 @@ import Navbar from "../components/Navbar.jsx";
 import FooterIslam from "../components/FooterIslam.jsx";
 import waveFooter from "../assets/images/waveFooter.svg";
 import Container from "../components/Container.jsx";
+import { useNavigate } from "react-router-dom";
 // ...existing code...
 
 export default function Berita() {
+  const navigate = useNavigate();
   React.useEffect(() => {
     document.documentElement.style.scrollBehavior = "smooth";
     return () => {
@@ -47,9 +49,11 @@ export default function Berita() {
                 Upacara adat ini merupakan bagian dari tradisi Sunda Nusantara
                 Sabuana, yang digelar setiap tahun sebagai ...
               </p>
-              <div className="mt-6 bg-[#215d60] text-white text-[18px] font-bold w-[249px] h-[45px] rounded-[200px] shadow hover:bg-[#2a7477] transition flex items-center justify-center cursor-default">
+              <button
+                className="mt-6 bg-[#215d60] text-white text-[18px] font-bold w-[249px] h-[45px] rounded-[200px] shadow hover:bg-[#2a7477] transition flex items-center justify-center"
+              >
                 Baca selengkapnya
-              </div>
+              </button>
             </div>
           </Container>
         </section>
@@ -163,7 +167,10 @@ export default function Berita() {
                   <p className="text-[#214b4e] text-[14px] text-center flex-1 mb-2 line-clamp-3">
                     {card.desc}
                   </p>
-                  <button className="bg-[#215d60] text-white rounded-full py-2 px-6 font-bold text-[16px] w-full transition hover:bg-[#2a7477] mt-2">
+                  <button
+                    className="bg-[#215d60] text-white rounded-full py-2 px-6 font-bold text-[16px] w-full transition hover:bg-[#2a7477] mt-2"
+                    {...(idx === 1 ? { onClick: () => navigate("/berita/2") } : {})}
+                  >
                     Baca selengkapnya &gt;
                   </button>
                 </div>
