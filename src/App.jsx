@@ -1,3 +1,5 @@
+import TentangKami from "./pages/TentangKami";
+import Berita from "./pages/Berita";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
@@ -17,6 +19,8 @@ export default function App() {
         <Route path="/agama/islam" element={<Islam />} />
         <Route path="/masjid/salman-al-farisi" element={<DetailSalman />} />
         {/* Tambahkan route lain jika perlu */}
+        <Route path="/berita" element={<Berita />} />
+        <Route path="/tentang" element={<TentangKami />} />
       </Routes>
     </Router>
   );

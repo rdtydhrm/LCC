@@ -9,9 +9,9 @@ export default function Footer() {
           <div className="flex flex-col items-start">
             <div className="flex items-center">
               <img src="src\assets\icons\LogoSatuTempat1.png" alt="Logo" className="w-[74px] h-[74px] mr-[15px]" />
-              <span className="text-[32px] text-[#255d60] font-bold">SatuTempat</span>
+              <span className="text-[40px] text-[#255d60] font-bold">SatuTempat</span>
             </div>
-            <p className="mt-[10px] w-[600px] text-gray-500 text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid impedit, beatae neque error, obcaecati ullam adipisci harum unde similique, consequuntur iure voluptatem facilis debitis nisi! Ipsa eius accusamus pariatur cumque in, est alias et repudiandae incidunt blanditiis sint maiores nostrum quas obcaecati exercitationem.</p>
+            <p className="mt-[10px] w-[600px] text-[#214b4e] text-base">SatuTempat hadir untuk setiap langkah ibadah. Temukan arah, temukan kedamaian.</p>
           </div>
           <div className="flex flex-col ml-[145px] mt-[10px]">
             <span className="text-[22px] font-bold text-[#255d60]">Pages</span>

@@ -5,6 +5,7 @@ import LoginModal from "./LoginModal.jsx";
 export default function Navbar() {
   const [showLogin, setShowLogin] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   // Close dropdown saat klik di luar
   React.useEffect(() => {
@@ -21,8 +22,17 @@ export default function Navbar() {
     return () => document.removeEventListener('mousedown', handleClick);
   }, [showDropdown]);
 
+  // Change navbar background on scroll
+  React.useEffect(() => {
+    function handleScroll() {
+      setScrolled(window.scrollY > 10);
+    }
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[#fafafa] p-3 shadow z-50">
+    <nav className={`fixed top-0 left-0 w-full p-3 z-50 transition-colors duration-300 ${scrolled ? 'bg-[#fafafa] shadow' : 'bg-transparent'}`}>
       <Container>
         <div className="flex justify-between items-center">
           <div className="flex items-center">
@@ -37,11 +47,12 @@ export default function Navbar() {
                   <span className="absolute left-1/2 -translate-x-1/2 bottom-0 w-0 group-hover:w-[65px] h-[2px] bg-[#255d60] rounded transition-all duration-300"></span>
                 </a>
               </li>
+              
               <li className="relative agama-dropdown-parent">
                 <button
                   type="button"
-                  onClick={() => setShowDropdown((v) => !v)}
                   className="text-[22px] font-bold text-[#255d60] relative group px-2 flex items-center focus:outline-none"
+                  onClick={() => setShowDropdown((prev) => !prev)}
                 >
                   Agama
                   <span className="absolute left-1/2 -translate-x-1/2 bottom-0 w-0 group-hover:w-[75px] h-[2px] bg-[#255d60] rounded transition-all duration-300"></span>
@@ -58,13 +69,13 @@ export default function Navbar() {
                 )}
               </li>
               <li>
-                <a href="#" className="text-[22px] font-bold text-[#255d60] relative group px-2">
+                <a href="/berita" className="text-[22px] font-bold text-[#255d60] relative group px-2">
                   Berita
                   <span className="absolute left-1/2 -translate-x-1/2 bottom-0 w-0 group-hover:w-[67px] h-[2px] bg-[#255d60] rounded transition-all duration-300"></span>
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[22px] font-bold text-[#255d60] relative group px-2">
+                <a href="/tentang" className="text-[22px] font-bold text-[#255d60] relative group px-2">
                   Tentang
                   <span className="absolute left-1/2 -translate-x-1/2 bottom-0 w-0 group-hover:w-[83px] h-[2px] bg-[#255d60] rounded transition-all duration-300"></span>
                 </a>

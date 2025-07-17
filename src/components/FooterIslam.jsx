@@ -12,7 +12,7 @@ export default function FooterIslam() {
               <img src={logoSatuTempat} alt="Logo" className="w-[74px] h-[74px] mr-[15px]" />
               <span className="text-[32px] text-[#fafafa] font-bold">SatuTempat</span>
             </div>
-            <p className="mt-[10px] w-[600px] text-[#fafafa] text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid impedit, beatae neque error, obcaecati ullam adipisci harum unde similique, consequuntur iure voluptatem facilis debitis nisi! Ipsa eius accusamus pariatur cumque in, est alias et repudiandae incidunt blanditiis sint maiores nostrum quas obcaecati exercitationem.</p>
+            <p className="mt-[10px] w-[600px] text-[#fafafa] text-base">SatuTempat hadir untuk setiap langkah ibadah. Temukan arah, temukan kedamaian.</p>
           </div>
           <div className="flex flex-col ml-[145px] mt-[10px]">
             <span className="text-[22px] font-bold text-[#fafafa]">Pages</span>
