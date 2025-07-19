@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar.jsx";
+// import Navbar from "../components/Navbar.jsx";
 import FooterIslam from "../components/FooterIslam.jsx";
 import waveFooter from "../assets/images/waveFooter.svg";
 import Container from "../components/Container.jsx";
@@ -15,7 +15,7 @@ export default function BeritaDetail() {
 
   return (
     <div className="flex flex-col bg-[#f6faf7] min-h-screen">
-      <Navbar />
+      {/* <Navbar /> */}
       <main className="flex-1 w-full">
         <Container>
           <div className="mx-auto mt-7 pt-24">

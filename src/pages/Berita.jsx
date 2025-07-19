@@ -1,6 +1,6 @@
 import React from "react";
 // ...existing code...
-import Navbar from "../components/Navbar.jsx";
+// import Navbar from "../components/Navbar.jsx";
 import FooterIslam from "../components/FooterIslam.jsx";
 import waveFooter from "../assets/images/waveFooter.svg";
 import Container from "../components/Container.jsx";
@@ -18,7 +18,7 @@ export default function Berita() {
 
   return (
     <div className="flex flex-col bg-[#f6faf7]">
-      <Navbar />
+      {/* <Navbar /> */}
       <main className="flex-1 w-full">
         {/* Hero Section dengan Parallax */}
         <section

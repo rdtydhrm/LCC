@@ -23,6 +23,15 @@ export default function DetailSalman() {
   return (
     <div className="min-h-screen bg-[#f6faf7] pt-24">
       <Container>
+        <nav className="mb-5 mt-7 text-[22px] flex flex-wrap items-center gap-1 text-[#215d60]">
+          <span className="hover:underline cursor-pointer">Home</span>
+          <span>&gt;</span>
+          <span className="hover:underline cursor-pointer">Agama</span>
+          <span>&gt;</span>
+          <span className="hover:underline cursor-pointer">Islam</span>
+          <span>&gt;</span>
+          <span className="font-bold text-[#214b4e]">Masjid Salman Al-Farisi</span>
+        </nav>
         <div className="rounded-xl overflow-hidden mt-8 mb-6">
           <img
             src={masjidSalman}
@@ -166,7 +175,6 @@ export default function DetailSalman() {
         <div id="lokasi" className="mt-1">
           <h3 className="text-[48px] font-bold text-[#214b4e] mb-6">Lokasi & Fasilitas</h3>
           <div className="flex flex-row gap-10 flex-wrap items-start">
-            {/* Map */}
             <div className="rounded-2xl overflow-hidden border-4 border-[#214b4e]/40 bg-white shadow-md p-2" style={{minWidth:'685px', maxWidth:'685px', width:'38vw'}}>
               <img
                 src="https://maps.googleapis.com/maps/api/staticmap?center=-7.9275,112.5672&zoom=16&size=500x350&markers=color:green%7Clabel:M%7C-7.9275,112.5672&key=YOUR_API_KEY"

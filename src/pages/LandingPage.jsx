@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar.jsx";
+// import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
 import Container from "../components/Container.jsx";
 import Carousel from "../components/Carousel.jsx";
@@ -14,7 +14,6 @@ export default function LandingPage() {
 
   return (
     <div className="flex flex-col bg-gray-100">
-      <Navbar />
       <main className="flex-1 w-full">
         {/* Hero Section dengan Parallax */}
         <section
@@ -41,23 +40,30 @@ export default function LandingPage() {
           </Container>
         </section>
         <Container>
-          <div className="w-full max-w-[1180px] mx-auto flex justify-end relative -mt-[50px]">
-            <span className="absolute left-[15px] top-[118px] text-[48px] font-bold z-10 select-none text-[#214b4e] ">Maps</span>
-            <div className="mt-[200px] w-full h-[570px] rounded-[30px] bg-[#214b4e] shadow-lg"></div>
-            <select className="w-[270px] h-[43px] px-4 rounded-[8px] text-[#214b4e] bg-white border border-gray-300 shadow focus:outline-none absolute right-[13px] top-[140px] z-10">
-              <option>All</option>
-              <option>Islam</option>
-              <option>Hindu</option>
-              <option>Protestan</option>
-              <option>Katolik</option>
-              <option>Buddha</option>
-              <option>Konghuchu</option>
-            </select>
+          <div className="w-full  mx-auto mt-10">
+            <div className="flex justify-between items-center mb-2">
+              <h2 className="text-[48px] ml-3 font-bold text-[#214b4e]">Maps</h2>
+              <select className="w-[150px] h-[38px] mr-5 px-3 rounded border border-gray-300 bg-white text-[#214b4e] shadow focus:outline-none">
+                <option>Agama</option>
+                <option>Islam</option>
+                <option>Hindu</option>
+                <option>Protestan</option>
+                <option>Katolik</option>
+                <option>Buddha</option>
+                <option>Konghuchu</option>
+              </select>
+            </div>
+            <div className="rounded-[20px] border-[8px] border-[#214b4e] bg-white p-2" style={{minHeight:'500px'}}>
+              {/* Ganti div di bawah ini dengan komponen peta asli jika ada */}
+              <div className="w-full h-[600px] bg-gray-200 rounded-[12px] flex items-center justify-center text-[#214b4e] text-2xl font-bold">
+                Map Placeholder
+              </div>
+            </div>
           </div>
-          <div className="mt-[46px] w-full flex justify-center">
+          <div className="mt-[70px] w-full flex justify-center">
             <h1 className="text-[48px] font-bold text-[#214b4e] text-center">Rekomendasi</h1>
           </div>
-          <div className="mt-8 w-full flex justify-center">
+          <div className=" w-full flex justify-center">
             <Carousel />
           </div>
 

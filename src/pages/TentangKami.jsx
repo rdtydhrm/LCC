@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar.jsx";
+// import Navbar from "../components/Navbar.jsx";
 import FooterIslam from "../components/FooterIslam.jsx";
 import waveFooter from "../assets/images/waveFooter.svg";
 import Container from "../components/Container.jsx";
@@ -7,7 +7,7 @@ import Container from "../components/Container.jsx";
 export default function TentangKami() {
   return (
     <div className="flex flex-col bg-gray-100 min-h-screen">
-      <Navbar />
+      {/* <Navbar /> */}
       <main className="flex-1 w-full">
         {/* Hero Section dengan Parallax */}
         <section

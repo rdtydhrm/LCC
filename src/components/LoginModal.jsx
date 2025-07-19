@@ -2,17 +2,24 @@ import React, { useState } from "react";
 import RegisterModal from "./RegisterModal.jsx";
 import RegisterPasswordModal from "./RegisterPasswordModal.jsx";
 
-export default function LoginModal({ onClose }) {
+export default function LoginModal({ onClose, onSuccess }) {
   const [showRegister, setShowRegister] = useState(false);
   const [showRegisterPassword, setShowRegisterPassword] = useState(false);
 
   if (showRegisterPassword) {
-    return <RegisterPasswordModal onClose={onClose} onSwitchToLogin={() => { setShowRegister(false); setShowRegisterPassword(false); }} />;
+    return <RegisterPasswordModal onClose={onClose} onSwitchToLogin={() => { setShowRegister(false); setShowRegisterPassword(false); }} onSuccess={onSuccess} />;
   }
 
   if (showRegister) {
-    return <RegisterModal onClose={onClose} onSwitchToLogin={() => setShowRegister(false)} onNext={() => setShowRegisterPassword(true)} />;
+    return <RegisterModal onClose={onClose} onSwitchToLogin={() => setShowRegister(false)} onNext={() => setShowRegisterPassword(true)} onSuccess={onSuccess} />;
   }
+
+  // Handler untuk submit login
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // ...validasi login di sini (atau API call)...
+    if (onSuccess) onSuccess(); // Panggil onSuccess jika login sukses
+  };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30">
@@ -25,7 +32,7 @@ export default function LoginModal({ onClose }) {
           ×
         </button>
         <h2 className="text-center text-[28px] font-bold text-[#214b4e] mb-6">Selamat Datang Kembali!</h2>
-        <form className="flex flex-col gap-4">
+        <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
           <div>
             <label className="block text-[#214b4e] font-semibold mb-1">Alamat Email</label>
             <input type="email" placeholder="Masukkan email anda" className="w-full border border-gray-400 rounded-lg px-4 py-3 text-base focus:outline-none focus:border-[#2a7477]" />

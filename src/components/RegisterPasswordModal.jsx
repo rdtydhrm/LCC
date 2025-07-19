@@ -1,6 +1,11 @@
 import React from "react";
 
-export default function RegisterPasswordModal({ onClose, onSwitchToLogin }) {
+export default function RegisterPasswordModal({ onClose, onSwitchToLogin, onSuccess }) {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (onSuccess) onSuccess();
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30">
       <div className="bg-white shadow-2xl p-8 w-[540px] max-w-full relative animate-fadeIn">
@@ -12,7 +17,7 @@ export default function RegisterPasswordModal({ onClose, onSwitchToLogin }) {
           ×
         </button>
         <h2 className="text-center text-[28px] font-bold text-[#214b4e] mb-6">Selamat Datang, Ayo Buat Akun!</h2>
-        <form className="flex flex-col gap-4">
+        <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
           <div>
             <label className="block text-[#214b4e] font-semibold mb-1">Kata Sandi</label>
             <div className="relative">
