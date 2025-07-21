@@ -34,7 +34,7 @@ export default function LandingPage() {
         <section
           className="w-full h-[720px] flex flex-col items-start justify-center py-16 relative overflow-hidden"
           style={{
-            backgroundImage: 'url("/src/assets/images/BG1.png")',
+            backgroundImage: 'url("/assets/images/BG1.png")',
             backgroundAttachment: "fixed",
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -113,7 +113,7 @@ export default function LandingPage() {
               <div className="flex gap-8 flex-nowrap justify-between mb-10 w-full">
                 <div className="bg-white rounded-[20px] flex-1 flex flex-col shadow-md overflow-hidden border-[10px] border-white min-w-0">
                   <img
-                    src="src\assets\images\1.jpg"
+                    src="/assets/images/1.jpg"
                     alt="Berita 1"
                     className="h-[140px] w-full object-cover"
                   />
@@ -135,7 +135,7 @@ export default function LandingPage() {
 
                 <div className="bg-white rounded-[20px] flex-1 flex flex-col shadow-md overflow-hidden border-[10px] border-white min-w-0">
                   <img
-                    src="src\assets\images\2.jpeg"
+                    src="/assets/images/2.jpeg"
                     alt="Berita 2"
                     className="h-[140px] w-full object-cover"
                   />
@@ -157,7 +157,7 @@ export default function LandingPage() {
 
                 <div className="bg-white rounded-[20px] flex-1 flex flex-col shadow-md overflow-hidden border-[10px] border-white min-w-0">
                   <img
-                    src="src\assets\images\3.jpeg"
+                    src="/assets/images/3.jpeg"
                     alt="Berita 3"
                     className="h-[140px] w-full object-cover"
                   />
