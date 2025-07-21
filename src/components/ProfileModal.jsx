@@ -6,7 +6,7 @@ export default function ProfileModal({ onClose, user = {}, posts = [] }) {
     <>
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30">
         <div className="bg-[#f8fafb] shadow-2xl p-0 pt-0 w-[900px] max-w-full relative animate-fadeIn rounded-xl overflow-hidden max-h-screen overflow-y-auto">
-          {/* Header Tab */}
+         
           <div className="flex justify-center items-center gap-12 pt-5 pb-1 bg-[#f8fafb] rounded-t-xl">
             <button
               className={`text-xl pb-1 px-1 transition-all duration-200 font-bold ${activeTab === "profil" ? "text-[#255d60]" : "text-[#7a9a9b] font-semibold"}`}
@@ -34,10 +34,10 @@ export default function ProfileModal({ onClose, user = {}, posts = [] }) {
           >
             ×
           </button>
-          {/* Tab Content */}
+         
           {activeTab === "profil" && (
             <>
-              {/* Profile Section */}
+             
               <div className="flex flex-row items-center justify-center gap-10 mt-10 mb-10">
                 <img src={user.photo || "/src/assets/images/Anggota/rd.png"} alt="Profile" className="w-40 h-40 rounded-full object-top object-cover border-4 border-[#e0e7ef] bg-white shadow" />
                 <div className="flex flex-col items-start justify-center">
@@ -53,7 +53,7 @@ export default function ProfileModal({ onClose, user = {}, posts = [] }) {
                   </div>
                 </div>
               </div>
-              {/* Card Grid */}
+              
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 px-10 pb-12 justify-items-center items-start">
                 {posts.length > 0 ? posts.map((post, idx) => (
                   <div key={idx} className="bg-[#E6F2E1] rounded-[20px] shadow-lg w-[290px] min-h-[320px] flex flex-col overflow-hidden hover:shadow-xl transition relative">

@@ -172,7 +172,7 @@ export default function DetailSalman() {
         <hr className="mt-[50px] mb-[32px] border-[#214b4e] opacity-50 " />
 
         <div id="foto" className="mt-1">
-          {/* Modal Preview Foto */}
+          
           {previewImg && (
             <div
               className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
@@ -270,7 +270,7 @@ export default function DetailSalman() {
                   Jalan Karang Ampel RT.8, RW.2, Desa Karang Widoro, Kecamatan
                   Dau, Kabupaten Malang
                 </p>
-                {/* Update the href here */}
+               
                 <a
                   href={googleMapsUrl}
                   target="_blank"
@@ -339,7 +339,7 @@ export default function DetailSalman() {
           </div>
         </div>
 
-        {/* Section Review */}
+    
         <hr className="mt-[50px] mb-[32px] border-[#214b4e] opacity-50 " />
         <div id="review" className="mt-1">
           <div className="flex flex-row items-center justify-between mb-8">
@@ -354,7 +354,7 @@ export default function DetailSalman() {
             </div>
           </div>
           <div className="flex flex-row gap-8 mb-8 justify-between w-full">
-            {/* Card 1 */}
+           
             <div className="bg-[#E6F2E1] rounded-3xl shadow-lg p-7 w-[400px] flex flex-col justify-between">
               <div className="text-[#214b4e]">
                 <div className="font-bold text-[22px] mb-1">5 / 5</div>
@@ -380,7 +380,7 @@ export default function DetailSalman() {
                 </div>
               </div>
             </div>
-            {/* Card 3 */}
+            
             <div className="bg-[#E6F2E1] rounded-3xl shadow-lg p-7 w-[400px] flex flex-col justify-between">
               <div className="text-[#214b4e]">
                 <div className="font-bold text-[22px] mb-1">4 / 5</div>

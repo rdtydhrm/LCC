@@ -14,11 +14,11 @@ export default function LoginModal({ onClose, onSuccess }) {
     return <RegisterModal onClose={onClose} onSwitchToLogin={() => setShowRegister(false)} onNext={() => setShowRegisterPassword(true)} onSuccess={onSuccess} />;
   }
 
-  // Handler untuk submit login
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-    // ...validasi login di sini (atau API call)...
-    if (onSuccess) onSuccess(); // Panggil onSuccess jika login sukses
+    
+    if (onSuccess) onSuccess(); 
   };
 
   return (

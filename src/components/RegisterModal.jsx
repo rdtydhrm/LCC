@@ -4,7 +4,7 @@ export default function RegisterModal({ onClose, onSwitchToLogin, onNext, onSucc
   function handleSubmit(e) {
     e.preventDefault();
     if (onNext) onNext();
-    // Jika tidak ada step berikutnya, anggap register selesai
+    
     if (!onNext && onSuccess) onSuccess();
   }
   return (

@@ -5,17 +5,17 @@ import ProfileModal from "./ProfileModal.jsx";
 
 export default function Navbar() {
   const [showLogin, setShowLogin] = useState(false);
-  // showDropdown: false | 'agama' | 'berita'
+  
   const [showDropdown, setShowDropdown] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [searchActive, setSearchActive] = useState(false);
-  // Login state
+ 
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
     return localStorage.getItem('isLoggedIn') === 'true';
   });
   const [showProfile, setShowProfile] = useState(false);
 
-  // Close dropdown saat klik di luar
+  
   useEffect(() => {
     function handleClick(e) {
       if (!e.target.closest('.agama-dropdown-parent') && !e.target.closest('.berita-dropdown-parent') && !e.target.closest('.profile-dropdown-parent')) {
@@ -30,7 +30,7 @@ export default function Navbar() {
     return () => document.removeEventListener('mousedown', handleClick);
   }, [showDropdown]);
 
-  // Change navbar background on scroll
+ 
   useEffect(() => {
     function handleScroll() {
       setScrolled(window.scrollY > 10);
@@ -39,7 +39,7 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Fungsi simulasi login/logout (untuk demo, ganti sesuai backend auth Anda)
+  
   const handleLogin = () => {
     setIsLoggedIn(true);
     localStorage.setItem('isLoggedIn', 'true');
@@ -67,7 +67,7 @@ export default function Navbar() {
                   <span className="absolute left-1/2 -translate-x-1/2 bottom-0 w-0 group-hover:w-[65px] h-[2px] bg-[#255d60] rounded transition-all duration-300"></span>
                 </a>
               </li>
-              {/* ...existing code... */}
+            
               <li className="relative agama-dropdown-parent">
                 <button
                   type="button"
@@ -111,7 +111,7 @@ export default function Navbar() {
                 </a>
               </li>
             </ul>
-            {/* Animated Search Bar */}
+           
             <div
               className={`relative flex items-center ml-[1px] mr-2 transition-all duration-300 ${searchActive ? 'w-[180px] md:w-[220px]' : 'w-[44px] md:w-[44px]'} bg-transparent rounded-full shadow border-[2px] border-[#255d60]`}
               style={{ boxShadow: '0 2px 8px 0 #e0e7ef80', minHeight: '44px', cursor: 'pointer' }}
@@ -133,7 +133,7 @@ export default function Navbar() {
                 style={{ zIndex: 2 }}
               />
             </div>
-            {/* Login/Profile Button */}
+            
             {isLoggedIn ? (
               <div className="relative group profile-dropdown-parent">
                 <button

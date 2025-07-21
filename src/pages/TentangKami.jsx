@@ -1,5 +1,4 @@
 import React from "react";
-// import Navbar from "../components/Navbar.jsx";
 import FooterIslam from "../components/FooterIslam.jsx";
 import waveFooter from "../assets/images/waveFooter.svg";
 import Container from "../components/Container.jsx";
@@ -7,9 +6,9 @@ import Container from "../components/Container.jsx";
 export default function TentangKami() {
   return (
     <div className="flex flex-col bg-gray-100 min-h-screen">
-      {/* <Navbar /> */}
+     
       <main className="flex-1 w-full">
-        {/* Hero Section dengan Parallax */}
+       
         <section
           className="w-full h-[720px] flex items-center justify-center relative overflow-hidden"
           style={{
@@ -25,7 +24,7 @@ export default function TentangKami() {
             <h1 className="font-bold text-[56px] text-[#214b4e] text-center drop-shadow-lg">Tentang Kami</h1>
           </div>
         </section>
-        {/* Konten lain bisa ditambahkan di sini */}
+        
         <section className="pt-16 pb-8 ">
           <Container>
             <h2 className="text-[50px] font-bold text-[#214b4e] mb-4">Misi Kami</h2>
@@ -34,7 +33,7 @@ export default function TentangKami() {
             </p>
           </Container>
         </section>
-        {/* Tim SatuTim Section */}
+        
         <section className="py-16">
           <Container>
             <div className="flex flex-col items-center mb-10">
@@ -42,7 +41,7 @@ export default function TentangKami() {
               <h2 className="text-[42px] font-bold text-[#379395] mb-1">Teman <span className="text-[#214b4e]">SatuTim</span></h2>
             </div>
             <div className="flex flex-col md:flex-row justify-center items-center gap-[100px]">
-              {/* Card 1 */}
+             
               <div className="flex flex-col items-center">
                 <div className="w-[300px] h-[410px] bg-[#214b4e] rounded-b-[20px] rounded-t-[180px] flex items-end justify-center shadow-2xl overflow-hidden mb-6 relative" style={{boxShadow: 'inset 0 8px 32px 0 rgba(0,0,0,0.25)'}}>
                   <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[210px] h-[210px] bg-white/20 rounded-full z-0 blur-[48px]" style={{filter:'blur(48px)'}}></div>
@@ -53,7 +52,7 @@ export default function TentangKami() {
                   <span className="px-8 py-2 rounded-full bg-[#255d60] text-white text-lg font-semibold shadow">FILKOM UB</span>
                 </div>
               </div>
-              {/* Card 2 */}
+           
               <div className="flex flex-col items-center">
                 <div className="w-[300px] h-[410px] bg-[#214b4e] rounded-b-[20px] rounded-t-[180px] flex items-end justify-center shadow-2xl overflow-hidden mb-6 relative" style={{boxShadow: 'inset 0 8px 32px 0 rgba(0,0,0,0.25)'}}>
                   <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[210px] h-[210px] bg-white/20 rounded-full z-0 blur-[48px]" style={{filter:'blur(48px)'}}></div>
@@ -64,7 +63,7 @@ export default function TentangKami() {
                   <span className="px-8 py-2 rounded-full bg-[#255d60] text-white text-lg font-semibold shadow">FILKOM UB</span>
                 </div>
               </div>
-              {/* Card 3 */}
+         
               <div className="flex flex-col items-center">
                 <div className="w-[300px] h-[410px] bg-[#214b4e] rounded-b-[20px] rounded-t-[180px] flex items-end justify-center shadow-2xl overflow-hidden mb-6 relative" style={{boxShadow: 'inset 0 8px 32px 0 rgba(0,0,0,0.25)'}}>
                   <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[210px] h-[210px] bg-white/20 rounded-full z-0 blur-[48px]" style={{filter:'blur(48px)'}}></div>

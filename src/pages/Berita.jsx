@@ -1,11 +1,8 @@
 import React from "react";
-// ...existing code...
-// import Navbar from "../components/Navbar.jsx";
 import FooterIslam from "../components/FooterIslam.jsx";
 import waveFooter from "../assets/images/waveFooter.svg";
 import Container from "../components/Container.jsx";
 import { useNavigate } from "react-router-dom";
-// ...existing code...
 
 export default function Berita() {
   const navigate = useNavigate();
@@ -18,9 +15,9 @@ export default function Berita() {
 
   return (
     <div className="flex flex-col bg-[#f6faf7]">
-      {/* <Navbar /> */}
+      
       <main className="flex-1 w-full">
-        {/* Hero Section dengan Parallax */}
+      
         <section
           className="w-full h-[720px] flex flex-col items-start justify-center py-16 relative overflow-hidden"
           style={{
@@ -178,7 +175,7 @@ export default function Berita() {
             ))}
           </div>
         </section>
-        {/* Pagination */}
+       
         <div className="w-full flex justify-center mt-1 mb-12">
           <nav className="flex gap-2">
             <button className="w-10 h-10 rounded-full bg-[#215d60] text-white font-bold flex items-center justify-center shadow transition">

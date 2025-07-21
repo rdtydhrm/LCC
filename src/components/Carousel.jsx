@@ -5,7 +5,7 @@ import imgVihara from "../assets/images/Vihara.jpg";
 import iconLeft from "../assets/icons/kiri.svg";
 import iconRight from "../assets/icons/kanan.svg";
 
-// Dummy data for recommendations
+
 const recommendations = [
 	{
 		image: imgKatedral,
@@ -30,7 +30,7 @@ const recommendations = [
 export default function Carousel() {
 	const [active, setActive] = React.useState(1);
 
-	// Auto-slide ke kanan setiap 10 detik
+	
 	React.useEffect(() => {
 		const interval = setInterval(() => {
 			setActive((prev) => (prev === recommendations.length - 1 ? 0 : prev + 1));
@@ -41,13 +41,13 @@ export default function Carousel() {
 	const prev = () => setActive((prev) => (prev === 0 ? recommendations.length - 1 : prev - 1));
 	const next = () => setActive((prev) => (prev === recommendations.length - 1 ? 0 : prev + 1));
 
-	// Mendapatkan index kiri dan kanan dari slide aktif
+	
 	const leftIdx = active === 0 ? recommendations.length - 1 : active - 1;
 	const rightIdx = active === recommendations.length - 1 ? 0 : active + 1;
 
 	return (
 	   <div className="relative flex items-center justify-center w-[1100px] h-[600px]">
-			{/* Left arrow */}
+		
 			<button
 				onClick={prev}
 				className="absolute left-8 top-1/2 -translate-y-1/2 z-20 bg-[#2a7477] hover:bg-[#214b4e] rounded-full w-12 h-12 flex items-center justify-center shadow-xl border-4 border-white backdrop-blur-none"
@@ -56,9 +56,9 @@ export default function Carousel() {
 			>
 				<img src={iconLeft} alt="Kiri" className="w-7 h-7" />
 			</button>
-			{/* Carousel Items */}
+			
 			<div className="flex w-full h-full items-center justify-center gap-6 relative">
-				{/* Left */}
+				
 	   <div className="w-[420px] h-[420px] scale-95 opacity-70 z-10 rounded-[32px] shadow-2xl overflow-hidden bg-gray-200 transition-all duration-500 flex-shrink-0 relative" style={{filter:'blur(2.5px)'}}>
 		   <img
 			   src={recommendations[leftIdx].image}
@@ -76,7 +76,7 @@ export default function Carousel() {
 			   </div>
 		   </div>
 	   </div>
-				{/* Center */}
+				
 				<div
 			   className="w-[600px] h-[500px] scale-100 opacity-100 z-20 rounded-[40px] shadow-[0_12px_48px_rgba(33,75,78,0.35)] overflow-hidden bg-gray-200 transition-all duration-500 flex-shrink-0 relative hover:scale-[1.03] hover:shadow-[0_20px_64px_rgba(33,75,78,0.45)]"
 				>
@@ -96,7 +96,7 @@ export default function Carousel() {
 					   </div>
 				   </div>
 				</div>
-				{/* Right */}
+				
 			   <div className="w-[420px] h-[420px] scale-95 opacity-70 z-10 rounded-[32px] shadow-2xl overflow-hidden bg-gray-200 transition-all duration-500 flex-shrink-0 relative" style={{filter:'blur(2.5px)'}}>
 				   <img
 					   src={recommendations[rightIdx].image}
@@ -115,7 +115,7 @@ export default function Carousel() {
 				   </div>
 			   </div>
 			</div>
-			{/* Right arrow */}
+			
 			<button
 				onClick={next}
 				className="absolute right-8 top-1/2 -translate-y-1/2 z-20 bg-[#2a7477] hover:bg-[#214b4e] rounded-full w-12 h-12 flex items-center justify-center shadow-xl border-4 border-white backdrop-blur-none"
