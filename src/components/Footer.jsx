@@ -11,7 +11,11 @@ export default function Footer() {
               <img src="src\assets\icons\LogoSatuTempat1.png" alt="Logo" className="w-[74px] h-[74px] mr-[15px]" />
               <span className="text-[40px] text-[#255d60] font-bold">SatuTempat</span>
             </div>
-            <p className="mt-[10px] w-[600px] text-[#214b4e] text-base">SatuTempat hadir untuk setiap langkah ibadah. Temukan arah, temukan kedamaian.</p>
+            <p className="mt-[10px] w-[600px] text-[#214b4e] text-base">
+              <span>SatuTempat hadir untuk setiap langkah ibadah.</span>
+              <br />
+              <span>Temukan arah, temukan kedamaian.</span>
+            </p>
           </div>
           <div className="flex flex-col ml-[145px] mt-[10px]">
             <span className="text-[22px] font-bold text-[#255d60]">Pages</span>

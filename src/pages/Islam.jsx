@@ -182,7 +182,6 @@ export default function Islam() {
         </Container>
       </section>
 
-      {/* Eksplorasi Tempat Baru Section */}
       <section className="w-full bg-[#f6faf7] py-12">
         <Container>
           <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4">

@@ -13,7 +13,9 @@ export default function DetailSalman() {
   const latitude = -7.952040000452137;
   const longitude = 112.56579896364526;
   const zoomLevel = 16;
-  const staticMapUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${latitude},${longitude}&zoom=${zoomLevel}&size=500x350&markers=color:green%7Clabel:M%7C${latitude},${longitude}&key=${import.meta.env.VITE_Maps_API_KEY}`;
+  const staticMapUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${latitude},${longitude}&zoom=${zoomLevel}&size=500x350&markers=color:green%7Clabel:M%7C${latitude},${longitude}&key=${
+    import.meta.env.VITE_Maps_API_KEY
+  }`;
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
 
   React.useEffect(() => {
@@ -172,7 +174,6 @@ export default function DetailSalman() {
         <hr className="mt-[50px] mb-[32px] border-[#214b4e] opacity-50 " />
 
         <div id="foto" className="mt-1">
-          
           {previewImg && (
             <div
               className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
@@ -270,7 +271,7 @@ export default function DetailSalman() {
                   Jalan Karang Ampel RT.8, RW.2, Desa Karang Widoro, Kecamatan
                   Dau, Kabupaten Malang
                 </p>
-               
+
                 <a
                   href={googleMapsUrl}
                   target="_blank"
@@ -299,47 +300,46 @@ export default function DetailSalman() {
           <h3 className="text-[48px] font-bold text-[#214b4e] mb-6">Tentang</h3>
           <div className="text-[#214b4e] text-[20px] text-justify">
             <p className="mb-8">
-              Sejaraahh ahhahahauhduahuaha - Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Masjid Salman Al-Farisi merupakan salah satu masjid yang berada di
+              Kota Malang, Jawa Timur. Masjid ini dibangun di atas tanah seluas
+              1,8 hektar dengan luas bangunan 1.600 meter persegi. Lokasi
+              pembangunan Masjid Salman Al-Farisi pada awalnya merupakan daerah
+              perkebunan jeruk. Pembangunan Masjid Salman Al-Farisi dimulai pada
+              tahun 2013 dan selesai pada pertengahan tahun 2017. Detail-detail
+              unik pada masjid ini menyebabkan proses pembangunan terbilang
+              cukup memakan waktu.
             </p>
             <p className="mb-8">
-              Sejaraahh ahhahahauhduahuaha - Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur.{" "}
-              <span className="italic">
-                Lorem ipsum dolor sit amet, reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur.
-              </span>
+              Penamaan Masjid Salman Al-Farisi diusulkan oleh salah satu pembina
+              yayasan dan masjid ini, yaitu Ustaz Abdullah Harami. Nama “Salman
+              Al-Farisi” diambil dari nama salah satu sahabat Nabi Muhammad SAW
+              yang dikenal dengan kecerdasan dan perannya dalam strategi Perang
+              Khandaq. Masjid Salman Al-Farisi dikenal karena arsitektur
+              bangunan yang menyerupai Masjid Taj Mahal di India. Bangunan
+              masjid yang didominasi oleh warna putih cerah, dengan bentuk
+              bangunan yang menyerupai istana dan megah. Masjid ini juga
+              memiliki satu kubah besar, empat kubah kecil, dan tujuh menara
+              tinggi yang berada di sekelilingnya. Meskipun arsitertur bangunan
+              masjid mengadopsi gaya arstitektur Taj Mahal, pengelola mengatakan
+              bahwa desainnya tidak seratur persen sama. Arsitektur Masjid
+              Salman Al-Farisi menggabungkan nuansa islam tradisional yang khas
+              dan unsur modern, dengan corak-corak klasik yang menarik
+              perhatian.
             </p>
             <p>
-              Sejaraahh ahhahahauhduahuaha - Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Saat ini, Masjid Salman Al-Farisi berkembang tetapi juga sebagai
+              pusat kegiatan keagamaan dan sosial masyarakat. Contoh kegiatannya
+              seperti pengajian ibu-ibu, pendidikan Al-Qur’an, kajian islami,
+              kegiatan sosial saat Ramadhan atau Idul Adha, dan lain-lain.
+              Banyak pengunjung yang mendatangi Masjid Salman Al-Farisi untuk
+              beribadah sekaligus mengabadikan keindahan masjid ini dengan
+              berfoto. Sehingga Masjid Salman Al-Farisi bukan hanya sebagai
+              tempat ibadah, tetapi juga destinasi wisata religi yang populer di
+              Kota Malang, Jawa Timur.
             </p>
           </div>
         </div>
 
-    
         <hr className="mt-[50px] mb-[32px] border-[#214b4e] opacity-50 " />
         <div id="review" className="mt-1">
           <div className="flex flex-row items-center justify-between mb-8">
@@ -354,7 +354,6 @@ export default function DetailSalman() {
             </div>
           </div>
           <div className="flex flex-row gap-8 mb-8 justify-between w-full">
-           
             <div className="bg-[#E6F2E1] rounded-3xl shadow-lg p-7 w-[400px] flex flex-col justify-between">
               <div className="text-[#214b4e]">
                 <div className="font-bold text-[22px] mb-1">5 / 5</div>
@@ -380,7 +379,7 @@ export default function DetailSalman() {
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-[#E6F2E1] rounded-3xl shadow-lg p-7 w-[400px] flex flex-col justify-between">
               <div className="text-[#214b4e]">
                 <div className="font-bold text-[22px] mb-1">4 / 5</div>
