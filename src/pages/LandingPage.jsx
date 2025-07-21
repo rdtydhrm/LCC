@@ -1,10 +1,29 @@
 import React from "react";
-// import Navbar from "../components/Navbar.jsx";
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 import Footer from "../components/Footer.jsx";
 import Container from "../components/Container.jsx";
 import Carousel from "../components/Carousel.jsx";
 
+// 1. Konfigurasi untuk Peta
+const containerStyle = {
+  width: '100%',
+  height: '600px',
+  borderRadius: '12px',
+};
+
+// Atur posisi tengah peta, contoh: Kota Malang
+const center = {
+  lat: -7.9666,
+  lng: 112.6326
+};
+
 export default function LandingPage() {
+  // 2. Memuat script Google Maps menggunakan API Key dari .env
+  const { isLoaded } = useJsApiLoader({
+    id: 'google-map-script',
+    googleMapsApiKey: import.meta.env.VITE_Maps_API_KEY
+  });
+
   React.useEffect(() => {
     document.documentElement.style.scrollBehavior = "smooth";
     return () => {
@@ -15,7 +34,7 @@ export default function LandingPage() {
   return (
     <div className="flex flex-col bg-gray-100">
       <main className="flex-1 w-full">
-        {/* Hero Section dengan Parallax */}
+        {/* ... (Kode Hero Section Anda tidak berubah) ... */}
         <section
           className="w-full h-[720px] flex flex-col items-start justify-center py-16 relative overflow-hidden"
           style={{
@@ -39,8 +58,9 @@ export default function LandingPage() {
             </p>
           </Container>
         </section>
+
         <Container>
-          <div className="w-full  mx-auto mt-10">
+          <div className="w-full mx-auto mt-10">
             <div className="flex justify-between items-center mb-2">
               <h2 className="text-[48px] ml-3 font-bold text-[#214b4e]">Maps</h2>
               <select className="w-[150px] h-[38px] mr-5 px-3 rounded border border-gray-300 bg-white text-[#214b4e] shadow focus:outline-none">
@@ -54,12 +74,24 @@ export default function LandingPage() {
               </select>
             </div>
             <div className="rounded-[20px] border-[8px] border-[#214b4e] bg-white p-2" style={{minHeight:'500px'}}>
-              {/* Ganti div di bawah ini dengan komponen peta asli jika ada */}
-              <div className="w-full h-[600px] bg-gray-200 rounded-[12px] flex items-center justify-center text-[#214b4e] text-2xl font-bold">
-                Map Placeholder
-              </div>
+              
+              {isLoaded ? (
+                <GoogleMap
+                  mapContainerStyle={containerStyle}
+                  center={center}
+                  zoom={13}
+                >
+                </GoogleMap>
+              ) : (
+                <div className="w-full h-[600px] flex items-center justify-center">
+                  Memuat Peta...
+                </div>
+              )}
+              
             </div>
           </div>
+          
+          {/* ... (Sisa kode Anda tidak berubah) ... */}
           <div className="mt-[70px] w-full flex justify-center">
             <h1 className="text-[48px] font-bold text-[#214b4e] text-center">Rekomendasi</h1>
           </div>
@@ -109,7 +141,7 @@ export default function LandingPage() {
               {/* Event utama & Upcoming Events */}
               <div className="flex flex-wrap gap-0 mt-2 justify-center items-stretch">
                 {/* Gabungan Event utama & Upcoming Events */}
-                <div className="bg-white rounded-[20px] h-[230px] flex flex-row w-full  shadow-md border-4 border-white overflow-hidden">
+                <div className="bg-white rounded-[20px] h-[230px] flex flex-row w-full  shadow-md border-4 border-white overflow-hidden">
                   {/* Event utama */}
                   <div className="bg-[#2a7477] rounded-[20px] flex items-center px-8 py-6 min-w-[340px] max-w-[580px] border-[6px] border-white">
                     <div className="flex flex-col ml-3 items-center justify-center mr-6">
