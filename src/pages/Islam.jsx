@@ -150,7 +150,7 @@ export default function Islam() {
       <section
         className="w-full h-[720px] flex flex-col items-start justify-center py-16 relative overflow-hidden"
         style={{
-          backgroundImage: 'url("/src/assets/images/agama/BG2.png")',
+          backgroundImage: 'url("/assets/images/agama/BG2.png")',
           backgroundAttachment: 'fixed',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
