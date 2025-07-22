@@ -56,7 +56,7 @@ export default function Navbar() {
       <Container>
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <img src="/src/assets/icons/LogoSatuTempat1.png" alt="Logo" className="w-[74px] h-[74px] mr-[15px]" />
+            <img src="/assets/icons/LogoSatuTempat1.png" alt="Logo" className="w-[74px] h-[74px] mr-[15px]" />
             <span className="text-[32px] text-[#255d60] font-bold">SatuTempat</span>
           </div>
           <div className="flex items-center gap-3">
@@ -127,7 +127,7 @@ export default function Navbar() {
                 onBlur={() => setSearchActive(false)}
               />
               <img
-                src="/src/assets/icons/search.png"
+                src="/assets/icons/search.png"
                 alt="Search"
                 className={`absolute top-1/2 w-7 h-7 opacity-90 transition-all duration-300 ${searchActive ? 'right-4 -translate-y-1/2 translate-x-0' : 'left-1/2 -translate-x-1/2 -translate-y-1/2'}`}
                 style={{ zIndex: 2 }}
@@ -142,7 +142,7 @@ export default function Navbar() {
                   title="Profil Anda"
                 >
                   <img
-                    src="/src/assets/icons/iconProfile.png"
+                    src="/assets/icons/iconProfile.png"
                     alt="Profile"
                     className="rounded-full object-cover"
                   />

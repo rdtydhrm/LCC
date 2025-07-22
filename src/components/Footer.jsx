@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex flex-row items-start pt-[30px]">
           <div className="flex flex-col items-start">
             <div className="flex items-center">
-              <img src="src\assets\icons\LogoSatuTempat1.png" alt="Logo" className="w-[74px] h-[74px] mr-[15px]" />
+              <img src="/assets/icons/LogoSatuTempat1.png" alt="Logo" className="w-[74px] h-[74px] mr-[15px]" />
               <span className="text-[40px] text-[#255d60] font-bold">SatuTempat</span>
             </div>
             <p className="mt-[10px] w-[600px] text-[#214b4e] text-base">
