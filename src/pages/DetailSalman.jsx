@@ -392,7 +392,10 @@ export default function DetailSalman() {
             </div>
           </div>
 
-          <button className="mt-2 px-8 py-2 bg-[#214b4e] text-white rounded-full shadow font-semibold text-[18px] hover:bg-[#255d60] transition">
+          <button
+            className="mt-2 px-8 py-2 bg-[#214b4e] text-white rounded-full shadow font-semibold text-[18px] hover:bg-[#255d60] transition"
+            onClick={() => (window.location.href = "/agama/islam")}
+          >
             Kembali
           </button>
         </div>
@@ -400,7 +403,7 @@ export default function DetailSalman() {
       <img
         src={waveFooter}
         alt="Wave Footer"
-        className="w-full bg-[#f6faf7] h-auto block -mt-[610px] -mb-[75px]"
+        className="w-full h-auto block -mt-[580px] -mb-[60px] pointer-events-none"
       />
       <FooterIslam />
     </div>

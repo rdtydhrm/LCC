@@ -103,7 +103,7 @@ export default function LandingPage() {
               <div className="flex justify-between items-center mb-8">
                 <h2 className="text-white text-[48px] font-bold">Berita</h2>
                 <a
-                  href="#"
+                  href="/berita"
                   className="text-white text-[18px] font-medium underline hover:text-[#2a7477]"
                 >
                   Lihat lebih banyak

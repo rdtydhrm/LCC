@@ -110,7 +110,12 @@ export default function BeritaDetail() {
                   <button className="bg-[#215d60] text-white rounded-full px-6 py-2 font-semibold text-sm hover:bg-[#1a474a] transition">Baca selengkapnya &gt;</button>
                 </div>
               </div>
-              <button className="mt-8 bg-[#215d60] text-white rounded-full px-8 py-2 font-semibold text-base hover:bg-[#1a474a] transition">Kembali</button>
+              <button
+                className="mt-8 bg-[#215d60] text-white rounded-full px-8 py-2 font-semibold text-base hover:bg-[#1a474a] transition"
+                onClick={() => window.location.href = '/berita'}
+              >
+                Kembali
+              </button>
             </section>
           </div>
         </Container>

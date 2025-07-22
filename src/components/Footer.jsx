@@ -20,10 +20,10 @@ export default function Footer() {
           <div className="flex flex-col ml-[145px] mt-[10px]">
             <span className="text-[22px] font-bold text-[#255d60]">Pages</span>
             <ul className="mt-[30px] space-y-2">
-              <li className="text-gray-600">Home</li>
-              <li className="text-gray-600">Agama</li>
-              <li className="text-gray-600">Berita</li>
-              <li className="text-gray-600">Tentang</li>
+              <li><a href="/" className="text-gray-600 hover:text-[#255d60] transition">Home</a></li>
+              <li><a href="/agama/islam" className="text-gray-600 hover:text-[#255d60] transition">Agama</a></li>
+              <li><a href="/berita" className="text-gray-600 hover:text-[#255d60] transition">Berita</a></li>
+              <li><a href="/tentang" className="text-gray-600 hover:text-[#255d60] transition">Tentang</a></li>
             </ul>
           </div>
           <div className="flex flex-col ml-[230px] mt-[10px]">
