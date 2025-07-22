@@ -39,7 +39,7 @@ export default function ProfileModal({ onClose, user = {}, posts = [] }) {
             <>
              
               <div className="flex flex-row items-center justify-center gap-10 mt-10 mb-10">
-                <img src={user.photo || "/assets/images/anggota/rd.png"} alt="Profile" className="w-40 h-40 rounded-full object-top object-cover border-4 border-[#e0e7ef] bg-white shadow" />
+                <img src={user.photo || "/assets/images/Anggota/rd.png"} alt="Profile" className="w-40 h-40 rounded-full object-top object-cover border-4 border-[#e0e7ef] bg-white shadow" />
                 <div className="flex flex-col items-start justify-center">
                   <div className="mb-1">
                     <span className="text-[#214b4e] font-bold text-lg align-middle">{posts.length || 3}</span>
