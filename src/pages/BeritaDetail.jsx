@@ -37,7 +37,7 @@ export default function BeritaDetail() {
             </div>
             
             <img
-              src="/src/assets/images/berita/Berita2/Foto berita.jpeg"
+              src="/assets/images/berita/Berita2/Foto berita.jpeg"
               alt="6 Tempat Ibadah Ini Jadi Bukti Toleransi yang Harmonis"
               className="w-full h-[570px] object-cover rounded-xl mb-12"
             />
@@ -90,21 +90,21 @@ export default function BeritaDetail() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <div className="bg-[#E6F2E1] rounded-2xl shadow-md p-5 flex flex-col items-stretch border border-[#E6F2E1]">
-                  <img src="/src/assets/images/berita/Berita2/1.jpg" alt="Berita 1" className="w-full h-48 object-cover rounded-xl mb-4" />
+                  <img src="/assets/images/berita/Berita2/1.jpg" alt="Berita 1" className="w-full h-48 object-cover rounded-xl mb-4" />
                   <h3 className="font-bold text-[#214b4e] text-center text-lg mb-2">Wali Kota : Depok Adalah Rumah Kita Semua, Termasuk Rumah Umat Agama...</h3>
                   <p className="text-[#214b4e] text-sm text-center mb-4 flex-1">Wali Kota Depok, Supian Suri memberikan ruang seluas-luasnya bagi seluruh umat beragama di Kota Depok untuk melaksanakan tradisi dan ibadahnya...</p>
                   <button className="bg-[#215d60] text-white rounded-full px-6 py-2 font-semibold text-sm hover:bg-[#1a474a] transition">Baca selengkapnya &gt;</button>
                 </div>
                 
                 <div className="bg-[#E6F2E1] rounded-2xl shadow-md p-5 flex flex-col items-stretch border border-[#E6F2E1]">
-                  <img src="/src/assets/images/berita/Berita2/2.jpg" alt="Berita 2" className="w-full h-48 object-cover rounded-xl mb-4" />
+                  <img src="/assets/images/berita/Berita2/2.jpg" alt="Berita 2" className="w-full h-48 object-cover rounded-xl mb-4" />
                   <h3 className="font-bold text-[#214b4e] text-center text-lg mb-2">Lewat Bakti Religi, Polda Maluku Aksi Bersih Rumah Ibadah Lintas Agama...</h3>
                   <p className="text-[#214b4e] text-sm text-center mb-4 flex-1">Kepolisian Daerah (Polda) Maluku melaksanakan aksi bakti religi berupa kegiatan bersih-bersih serentak di sejumlah rumah ibadah lintas agama...</p>
                   <button className="bg-[#215d60] text-white rounded-full px-6 py-2 font-semibold text-sm hover:bg-[#1a474a] transition">Baca selengkapnya &gt;</button>
                 </div>
                
                 <div className="bg-[#E6F2E1] rounded-2xl shadow-md p-5 flex flex-col items-stretch border border-[#E6F2E1]">
-                  <img src="/src/assets/images/berita/Berita2/3.jpg" alt="Berita 3" className="w-full h-48 object-cover rounded-xl mb-4" />
+                  <img src="/assets/images/berita/Berita2/3.jpg" alt="Berita 3" className="w-full h-48 object-cover rounded-xl mb-4" />
                   <h3 className="font-bold text-[#214b4e] text-center text-lg mb-2">Berangkatkan 166 Penjaga Rumah Ibadah Umrah dan Perjalanan Religi...</h3>
                   <p className="text-[#214b4e] text-sm text-center mb-4 flex-1">Gubernur Kalimantan Timur, H. Rudy Mas'ud (Harum), menyerahkan secara simbolis penghargaan Gratitpol Umrah dan Perjalanan Religi kepada...</p>
                   <button className="bg-[#215d60] text-white rounded-full px-6 py-2 font-semibold text-sm hover:bg-[#1a474a] transition">Baca selengkapnya &gt;</button>

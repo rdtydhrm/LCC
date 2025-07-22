@@ -20,8 +20,8 @@ export default function Berita() {
       
         <section
           className="w-full h-[720px] flex flex-col items-start justify-center py-16 relative overflow-hidden"
-          style={{
-            backgroundImage: 'url("/src/assets/images/berita/headline.jpg")',
+        style={{
+            backgroundImage: 'url("/assets/images/berita/headline.jpg")',
             backgroundAttachment: "fixed",
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -58,91 +58,91 @@ export default function Berita() {
         <section className="w-full flex justify-center bg-transparent py-12">
           <div className="max-w-7xl w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
             {[
-              {
-                image: "/src/assets/images/berita/1.jpeg",
+            {
+              image: "/assets/images/berita/1.jpeg",
                 title: "Membuka Ruang Dialog Agama dan Spiritualitas",
                 desc: "Dalam membuka ruang untuk dialog, memahami perbedaan, dan menghormati pilihan orang lain, kita dapat menciptakan dunia di mana  agama...",
               },
               {
-                image: "/src/assets/images/berita/2.jpeg",
+              image: "/assets/images/berita/2.jpeg",
                 title:
                   "6  Tempat Ibadah Ini Jadi Bukti Toleransi yang Harmonis",
                 desc: "Hidup rukun dan saling toleransi umat beragama selalu didambakan dalam kehidupan  sosial. Bayangkan, tinggal dalam satu wilayah...",
               },
               {
-                image: "/src/assets/images/berita/3.jpg",
+              image: "/assets/images/berita/3.jpg",
                 title:
                   "Sambut Tahun Baru Islam 1447 H, Kemenag Depok Gelar Serangkaian...",
                 desc: "Dalam rangka menyambut Tahun Baru Islam 1447 Hijriah (H) yang jatuh pada Kamis (26/06), Kantor Kementrian Agama (Kemenag) Kota Depok...",
               },
               {
-                image: "/src/assets/images/berita/4.jpg",
+              image: "/assets/images/berita/4.jpg",
                 title:
                   "Ibadah Rutin Agama Muslim dan Kristen di Lanud Yohanis Kapiyau Timika...",
                 desc: "Lanud Yohanis Kopiyau terus menunjukkan komitmennya dalam menjaga keharmonisan dan toleransi antar umat beragama melalui ...",
               },
               {
-                image: "/src/assets/images/berita/5.jpg",
+              image: "/assets/images/berita/5.jpg",
                 title:
                   "Gema Takbir Warungboto Wujud Nyata Agama dan Budaya Berjalan Bersama...",
                 desc: "Wali Kota Yogyakarta Hasto Wardoyo melepas ribuan orang peserta karnaval Gema Takbir Warungboto pada malam Hari Raya Iduladha 1446...",
               },
               {
-                image: "/src/assets/images/berita/6.jpg",
+              image: "/assets/images/berita/6.jpg",
                 title:
                   "Penyuluhan Agama Kristen di Panti Wreda, Kenalkan Moderasi Beragama",
                 desc: "Tugas seorang penyuluh bukan saja soal mencerahkan wawasan agama jamaahnya, membuat hati jamaah senang dan terhibur pun...",
               },
               {
-                image: "/src/assets/images/berita/7.jpg",
+              image: "/assets/images/berita/7.jpg",
                 title:
                   "Sampaikan Konsep Cinta, Menag Beri Alasan Ajaran Agama yang Berdampak",
                 desc: "Menteri Agama Replublik Indonesia, Nasaruddin Umar dari Auditorium HM. Rasjidi menyampaikan arahan pada kegiatan Kick-Off Meeting...",
               },
               {
-                image: "/src/assets/images/berita/8.jpg",
+              image: "/assets/images/berita/8.jpg",
                 title:
                   "Sambut Hari Bhayangkara ke-79, Polres Brebes Bersihkan Tempat Ibadah...",
                 desc: "Menyambut Hari Bhayangkara ke-79 yang jatuh pada 1 Juli 2025, Polres Brebes menggelar kegiatan sosial bertajuk “Bakti Religi” dengan...",
               },
               {
-                image: "/src/assets/images/berita/9.jpg",
+              image: "/assets/images/berita/9.jpg",
                 title:
                   "Menteri Agama Luncurkan Buku Hari Raya Umat Buddha dan Kalender...",
                 desc: "Menteri Agama Nasaruddin Umar hadiri Dialog Kerukunan Umat Buddha dan luncurkan Buku Hari Raya dan Kalender Buddhis 2024-2061, sekaligus...",
               },
               {
-                image: "/src/assets/images/berita/10.jpg",
+              image: "/assets/images/berita/10.jpg",
                 title:
                   "Wali Kota : Depok Adalah Rumah Kita Semua, Termasuk Rumah Umat Agama...",
                 desc: "Wali Kota Depok, Supian Suri memberikan ruang seluas-luasnya bagi seluruh umat beragama di Kota Depok untuk melaksanakan tradisi dan ibadahnya...",
               },
               {
-                image: "/src/assets/images/berita/11.jpg",
+              image: "/assets/images/berita/11.jpg",
                 title:
                   "Lewat Bakti Religi, Polda Maluku Aksi Bersih Rumah Ibadah Lintas Agama...",
                 desc: "Kepolisian Daerah (Polda) Maluku melaksanakan aksi bakti religi berupa kegiatan bersih-bersih serentak di sejumlah rumah ibadah lintas agama...",
               },
               {
-                image: "/src/assets/images/berita/12.jpg",
+              image: "/assets/images/berita/12.jpg",
                 title:
                   "Berangkatkan 166 Penjaga Rumah Ibadah Umrah dan Perjalanan Religi...",
                 desc: "Gubernur Kalimantan Timur, H. Rudy Mas’ud (Harum), menyerahkan secara simbolis penghargaan Gratispol Umrah dan Perjalanan Religi kepada...",
               },
               {
-                image: "/src/assets/images/berita/13.jpg",
+              image: "/assets/images/berita/13.jpg",
                 title:
                   "Survei Pembangunan Tempat Ibadah, Saiful Amri : Tekankan Jaga...",
                 desc: "Sebagai tindak lanjut atas pengajuan permohonan rekomendasi izin menghadirkan Rumah Ibadah Kristen, Kepala Kantor Kementerian Agama Kota...",
               },
               {
-                image: "/src/assets/images/berita/14.jpg",
+              image: "/assets/images/berita/14.jpg",
                 title:
                   "Gubernur Riau Dukung Pembangunan Rumah Ibadah Semua Agama",
                 desc: "Gubernur Riau (Gubri) Abdul Wahid, menegaskan pentingnya mengaja toleransi antarumat beragama dan mendukung pembangunan rumah ibadah...",
               },
               {
-                image: "/src/assets/images/berita/15.jpg",
+              image: "/assets/images/berita/15.jpg",
                 title:
                   "Mengajarkan Toleransi Beragama Kepada Anak di Rumah Ibadah",
                 desc: "Sabtu (8/2), 28 siswa kelas 1 SD Angkasa, Kabupaten Biak Numfor, mengikuti studi wisata dengan mengunjungi berbagai rumah ibadah untuk...",

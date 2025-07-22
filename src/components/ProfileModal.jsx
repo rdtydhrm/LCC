@@ -39,7 +39,7 @@ export default function ProfileModal({ onClose, user = {}, posts = [] }) {
             <>
              
               <div className="flex flex-row items-center justify-center gap-10 mt-10 mb-10">
-                <img src={user.photo || "/src/assets/images/Anggota/rd.png"} alt="Profile" className="w-40 h-40 rounded-full object-top object-cover border-4 border-[#e0e7ef] bg-white shadow" />
+                <img src={user.photo || "/assets/images/anggota/rd.png"} alt="Profile" className="w-40 h-40 rounded-full object-top object-cover border-4 border-[#e0e7ef] bg-white shadow" />
                 <div className="flex flex-col items-start justify-center">
                   <div className="mb-1">
                     <span className="text-[#214b4e] font-bold text-lg align-middle">{posts.length || 3}</span>
@@ -75,7 +75,7 @@ export default function ProfileModal({ onClose, user = {}, posts = [] }) {
                   <>
                     <div className="bg-[#E6F2E1] rounded-[20px] shadow-lg w-[250px] min-h-[320px] flex flex-col overflow-hidden hover:shadow-xl transition relative">
                       <div className="relative">
-                        <img src="src/assets/images/agama/M1.webp" alt="Masjid Agung Jami'" className="w-full h-[160px] object-cover rounded-[20px] border-[10px] border-[#E6F2E1]" />
+                        <img src="/assets/images/agama/M1.webp" alt="Masjid Agung Jami'" className="w-full h-[160px] object-cover rounded-[20px] border-[10px] border-[#E6F2E1]" />
                       </div>
                       <div className="p-4 pt-1 flex flex-col flex-1">
                         <h3 className="font-bold text-[18px] text-[#214b4e] mb-1">Masjid Agung Jami'</h3>
@@ -90,7 +90,7 @@ export default function ProfileModal({ onClose, user = {}, posts = [] }) {
                     </div>
                     <div className="bg-[#E6F2E1] rounded-[20px] shadow-lg w-[250px] min-h-[320px] flex flex-col overflow-hidden hover:shadow-xl transition relative">
                       <div className="relative">
-                        <img src="src/assets/images/agama/M2.webp" alt="Masjid Tiban Turen" className="w-full h-[160px] object-cover rounded-[20px] border-[10px] border-[#E6F2E1]" />
+                        <img src="/assets/images/agama/M2.webp" alt="Masjid Tiban Turen" className="w-full h-[160px] object-cover rounded-[20px] border-[10px] border-[#E6F2E1]" />
                       </div>
                       <div className="p-4 pt-1 flex flex-col flex-1">
                         <h3 className="font-bold text-[18px] text-[#214b4e] mb-1">Masjid Tiban Turen</h3>
@@ -105,7 +105,7 @@ export default function ProfileModal({ onClose, user = {}, posts = [] }) {
                     </div>
                     <div className="bg-[#E6F2E1] rounded-[20px] shadow-lg w-[250px] min-h-[320px] flex flex-col overflow-hidden hover:shadow-xl transition relative">
                       <div className="relative">
-                        <img src="src/assets/images/agama/M3.jpg" alt="Masjid Al Hikmah" className="w-full h-[160px] object-cover rounded-[20px] border-[10px] border-[#E6F2E1]" />
+                        <img src="/assets/images/agama/M3.jpg" alt="Masjid Al Hikmah" className="w-full h-[160px] object-cover rounded-[20px] border-[10px] border-[#E6F2E1]" />
                       </div>
                       <div className="p-4 pt-1 flex flex-col flex-1">
                         <h3 className="font-bold text-[18px] text-[#214b4e] mb-1">Masjid Al Hikmah</h3>

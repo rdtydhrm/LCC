@@ -32,11 +32,11 @@ export default function RegisterModal({ onClose, onSwitchToLogin, onNext, onSucc
         <div className="text-center text-[#214b4e] mt-4 mb-2">Atau daftar dengan:</div>
         <div className="flex gap-4 mb-4">
           <button className="flex-1 border border-[#214b4e] rounded-lg py-2 flex items-center justify-center gap-2 text-[#214b4e] font-medium bg-white hover:bg-gray-50 transition">
-            <img src="src\assets\icons\google-svgrepo-com.svg" alt="Google" className="w-5 h-5" />
+            <img src="/assets/icons/google-svgrepo-com.svg" alt="Google" className="w-5 h-5" />
             Google
           </button>
           <button className="flex-1 border border-[#214b4e] rounded-lg py-2 flex items-center justify-center gap-2 text-[#214b4e] font-medium bg-white hover:bg-gray-50 transition">
-            <img src="src\assets\icons\facebook-svgrepo-com.svg" alt="Facebook" className="w-5 h-5" />
+            <img src="/assets/icons/facebook-svgrepo-com.svg" alt="Facebook" className="w-5 h-5" />
             Facebook
           </button>
         </div>

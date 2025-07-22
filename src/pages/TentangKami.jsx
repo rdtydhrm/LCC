@@ -11,8 +11,8 @@ export default function TentangKami() {
        
         <section
           className="w-full h-[720px] flex items-center justify-center relative overflow-hidden"
-          style={{
-            backgroundImage: 'url("/src/assets/images/TentangKami.jpg")',
+        style={{
+            backgroundImage: 'url("/assets/images/TentangKami.jpg")',
             backgroundAttachment: 'fixed',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
@@ -45,7 +45,7 @@ export default function TentangKami() {
               <div className="flex flex-col items-center">
                 <div className="w-[300px] h-[410px] bg-[#214b4e] rounded-b-[20px] rounded-t-[180px] flex items-end justify-center shadow-2xl overflow-hidden mb-6 relative" style={{boxShadow: 'inset 0 8px 32px 0 rgba(0,0,0,0.25)'}}>
                   <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[210px] h-[210px] bg-white/20 rounded-full z-0 blur-[48px]" style={{filter:'blur(48px)'}}></div>
-                  <img src="/src/assets/images/anggota/ign.png" alt="Ngurah Ananta" className="object-cover w-[280px] mt-6 relative z-10" />
+                  <img src="/assets/images/anggota/ign.png" alt="Ngurah Ananta" className="object-cover w-[280px] mt-6 relative z-10" />
                 </div>
                 <div className="flex flex-col items-center gap-3">
                   <span className="px-10 py-3 rounded-full bg-[#255d60] text-white text-2xl font-bold shadow">Ngurah Ananta</span>
@@ -56,7 +56,7 @@ export default function TentangKami() {
               <div className="flex flex-col items-center">
                 <div className="w-[300px] h-[410px] bg-[#214b4e] rounded-b-[20px] rounded-t-[180px] flex items-end justify-center shadow-2xl overflow-hidden mb-6 relative" style={{boxShadow: 'inset 0 8px 32px 0 rgba(0,0,0,0.25)'}}>
                   <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[210px] h-[210px] bg-white/20 rounded-full z-0 blur-[48px]" style={{filter:'blur(48px)'}}></div>
-                  <img src="/src/assets/images/anggota/rd.png" alt="Raditya Dharma" className="object-cover w-[270px] mt-6 relative z-10" />
+                  <img src="/assets/images/anggota/rd.png" alt="Raditya Dharma" className="object-cover w-[270px] mt-6 relative z-10" />
                 </div>
                 <div className="flex flex-col items-center gap-3">
                   <span className="px-10 py-3 rounded-full bg-[#255d60] text-white text-2xl font-bold shadow">Raditya Dharma</span>
@@ -67,7 +67,7 @@ export default function TentangKami() {
               <div className="flex flex-col items-center">
                 <div className="w-[300px] h-[410px] bg-[#214b4e] rounded-b-[20px] rounded-t-[180px] flex items-end justify-center shadow-2xl overflow-hidden mb-6 relative" style={{boxShadow: 'inset 0 8px 32px 0 rgba(0,0,0,0.25)'}}>
                   <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[210px] h-[210px] bg-white/20 rounded-full z-0 blur-[48px]" style={{filter:'blur(48px)'}}></div>
-                  <img src="/src/assets/images/anggota/dp.png" alt="Diandra Prisha" className="object-cover w-[250px] mt-6 relative z-10" />
+                  <img src="/assets/images/anggota/dp.png" alt="Diandra Prisha" className="object-cover w-[250px] mt-6 relative z-10" />
                 </div>
                 <div className="flex flex-col items-center gap-3">
                   <span className="px-10 py-3 rounded-full bg-[#255d60] text-white text-2xl font-bold shadow">Diandra Prisha</span>
