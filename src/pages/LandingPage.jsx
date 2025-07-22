@@ -113,21 +113,21 @@ export default function LandingPage() {
               <div className="flex gap-8 flex-nowrap justify-between mb-10 w-full">
                 <div className="bg-white rounded-[20px] flex-1 flex flex-col shadow-md overflow-hidden border-[10px] border-white min-w-0">
                   <img
-                    src="/assets/images/1.jpg"
+                    src="/assets/images/berita/2.jpeg"
                     alt="Berita 1"
                     className="h-[140px] w-full object-cover"
                   />
                   <div className="p-4 flex-1 flex flex-col">
                     <div className="font-semibold text-[#214b4e] text-center text-[18px] mb-1 leading-tight">
-                      Kementerian Agama Sediakan 5 Pos Bantuan Jemaah Haji di
-                      Masjid Nabawi
+                      6  Tempat Ibadah Ini Jadi Bukti Toleransi yang Harmonis
                     </div>
                     <div className="text-gray-500 text-[14px] mb-4 text-center flex-1 leading-snug">
-                      Kementerian Agama menyediakan lima titik pos bantuan
-                      jemaah haji di kawasan Masjid Nabawi. Kepala Seksi Media
-                      Center Haji (MCH) ....
+                      Hidup rukun dan saling toleransi umat beragama selalu didambakan dalam kehidupan  sosial. Bayangkan, tinggal dalam satu wilayah...
                     </div>
-                    <button className="mt-auto bg-[#2a7477] text-white rounded-full py-2 px-4 font-semibold text-[15px]">
+                    <button
+                      className="mt-auto bg-[#2a7477] text-white rounded-full py-2 px-4 font-semibold text-[15px]"
+                      onClick={() => window.location.href = '/berita/2'}
+                    >
                       Baca selengkapnya &gt;
                     </button>
                   </div>

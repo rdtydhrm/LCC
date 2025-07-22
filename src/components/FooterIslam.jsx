@@ -21,10 +21,10 @@ export default function FooterIslam() {
           <div className="flex flex-col ml-[145px] mt-[10px]">
             <span className="text-[22px] font-bold text-[#fafafa]">Pages</span>
             <ul className="mt-[30px] space-y-2">
-              <li><a href="/" className="text-[#fafafa] hover:text-[#21b0b6] transition">Home</a></li>
-              <li><a href="/agama/islam" className="text-[#fafafa] hover:text-[#21b0b6] transition">Agama</a></li>
-              <li><a href="/berita" className="text-[#fafafa] hover:text-[#21b0b6] transition">Berita</a></li>
-              <li><a href="/tentang" className="text-[#fafafa] hover:text-[#21b0b6] transition">Tentang</a></li>
+              <li><a href="/" className="text-[#fafafa] hover:text-[#21b0b6] hover:underline transition">Home</a></li>
+              <li><a href="/agama/islam" className="text-[#fafafa] hover:text-[#21b0b6] hover:underline transition">Agama</a></li>
+              <li><a href="/berita" className="text-[#fafafa] hover:text-[#21b0b6] hover:underline transition">Berita</a></li>
+              <li><a href="/tentang" className="text-[#fafafa] hover:text-[#21b0b6] hover:underline transition">Tentang</a></li>
             </ul>
           </div>
           <div className="flex flex-col ml-[230px] mt-[10px]">

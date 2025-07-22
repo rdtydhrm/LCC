@@ -77,25 +77,30 @@ export default function Carousel() {
 		   </div>
 	   </div>
 				
-				<div
-			   className="w-[600px] h-[500px] scale-100 opacity-100 z-20 rounded-[40px] shadow-[0_12px_48px_rgba(33,75,78,0.35)] overflow-hidden bg-gray-200 transition-all duration-500 flex-shrink-0 relative hover:scale-[1.03] hover:shadow-[0_20px_64px_rgba(33,75,78,0.45)]"
-				>
-					<img
-						src={recommendations[active].image}
-						alt={recommendations[active].title}
-						className="object-cover w-full h-full"
-					/>
-				   <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-8 flex flex-col gap-3">
-					   <div className="text-white text-4xl font-bold drop-shadow-lg">{recommendations[active].title}</div>
-					   <div className="text-white text-2xl opacity-90 drop-shadow">{recommendations[active].location}</div>
-					   <div className="flex items-center gap-2 mt-3">
-						   <span className="text-yellow-400 text-2xl">★</span>
-						   <span className="text-white text-2xl font-semibold">
-							   {recommendations[active].rating.toFixed(1).replace(".", ",")}
-						   </span>
-					   </div>
+			   <div
+				 className="w-[600px] h-[500px] scale-100 opacity-100 z-20 rounded-[40px] shadow-[0_12px_48px_rgba(33,75,78,0.35)] overflow-hidden bg-gray-200 transition-all duration-500 flex-shrink-0 relative hover:scale-[1.03] hover:shadow-[0_20px_64px_rgba(33,75,78,0.45)] cursor-pointer"
+				 onClick={() => {
+				   if (recommendations[active].title === "Masjid Agung") {
+					 window.location.href = "/masjid/salman-al-farisi";
+				   }
+				 }}
+			   >
+				 <img
+				   src={recommendations[active].image}
+				   alt={recommendations[active].title}
+				   className="object-cover w-full h-full"
+				 />
+				 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-8 flex flex-col gap-3">
+				   <div className="text-white text-4xl font-bold drop-shadow-lg">{recommendations[active].title}</div>
+				   <div className="text-white text-2xl opacity-90 drop-shadow">{recommendations[active].location}</div>
+				   <div className="flex items-center gap-2 mt-3">
+					 <span className="text-yellow-400 text-2xl">★</span>
+					 <span className="text-white text-2xl font-semibold">
+					   {recommendations[active].rating.toFixed(1).replace(".", ",")}
+					 </span>
 				   </div>
-				</div>
+				 </div>
+			   </div>
 				
 			   <div className="w-[420px] h-[420px] scale-95 opacity-70 z-10 rounded-[32px] shadow-2xl overflow-hidden bg-gray-200 transition-all duration-500 flex-shrink-0 relative" style={{filter:'blur(2.5px)'}}>
 				   <img
